@@ -453,13 +453,13 @@ int main() {
 			std::cout << "\nDigite a posicao(x, y, z) ";
 		std::cin >> a1 >> a2 >> a3;
 		cursor.putVoxel(a1, a2, a3);
-		std::cout << "Colocado voxel em" << a1 << a2 << a3 << "\n";
+		std::cout << "Colocado voxel em" << a1 << " " << a2 << " " << a3 << "\n";
 		break;
 		case 3:
 			std::cout << "\nDigite a posicao(x, y , z) ";
 			std::cin >> a1 >> a2 >> a3;
 			cursor.cutVoxel(a1, a2, a3);
-			std::cout << "Tirado voxel em" << a1 << a2 << a3 << "\n";
+			std::cout << "Tirado voxel em" << a1 << " " << a2 << " " << a3 << "\n";
 			break;
 		case 4:
 			std::cout << "\nDigite as posicoes das verticies(x0, x1, y0, y1, z0, z1) ";
@@ -515,3 +515,7 @@ int main() {
 	return 0;
 }
 
+
+/*to do
+*ajeitar liberação de memoria
+*/
